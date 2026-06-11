@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS# IDE v4.5 — Descarga Oficial</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg1: #071207;
+            --bg2: #0f2a0f;
+            --bg3: #143814;
+            --green1: #4ecf4e;
+            --green2: #b6ff4a;
+            --green3: #d8ff9c;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            background: var(--bg1);
+            color: #e0ffd0;
+            overflow-x: hidden;
+        }
+
+        /* Fondo dinámico */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(40,120,40,0.4), transparent 70%),
+                radial-gradient(circle at 80% 20%, rgba(60,160,60,0.3), transparent 70%);
+            z-index: -1;
+            filter: blur(50px);
+        }
+
+        header {
+            padding: 25px 50px;
+            background: rgba(7,18,7,0.9);
+            border-bottom: 2px solid rgba(150,255,100,0.3);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(6px);
+        }
+
+        .logo {
+            font-family: 'Bangers', cursive;
+            font-size: 48px;
+            color: var(--green2);
+            letter-spacing: 4px;
+        }
+
+        .tagline {
+            color: #9aff9a;
+            font-size: 18px;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 120px 40px 100px;
+        }
+
+        .hero h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 5rem;
+            color: var(--green3);
+            text-shadow: 0 0 25px rgba(150,255,100,0.4);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 850px;
+            margin: 20px auto 40px;
+            color: #c8ffb0;
+        }
+
+        /* BOTÓN DESCARGA */
+        .download-btn {
+            display: inline-block;
+            padding: 22px 70px;
+            font-family: 'Bangers', cursive;
+            font-size: 30px;
+            background: linear-gradient(135deg, #3fa63f, #4ecf4e);
+            color: #0a1a0a;
+            border: 6px solid var(--green2);
+            border-radius: 20px;
+            text-decoration: none;
+            box-shadow: 0 12px 0 #1a3a00;
+            transition: all 0.25s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 18px 0 #1a3a00;
+        }
+
+        /* SECCIÓN FEATURES */
+        .section {
+            padding: 80px 40px;
+            background: rgba(10,40,10,0.4);
+            border-top: 2px solid rgba(150,255,100,0.2);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            color: var(--green2);
+            margin-bottom: 50px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(20,60,20,0.9);
+            border: 2px solid rgba(150,255,100,0.3);
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: transform 0.25s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            color: var(--green2);
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background: #061006;
+            color: #4a7a4a;
+            border-top: 2px solid rgba(150,255,100,0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">VS# 🌿</div>
+        <div class="tagline">v4.5 — Descarga Oficial</div>
+    </header>
+
+    <section class="hero">
+        <h1>VS# IDE v4.5</h1>
+        <p>El entorno de desarrollo en español más avanzado, con motor 3D integrado, exportación web y un ecosistema completo para crear juegos, apps y experiencias interactivas.</p>
+
+        <!-- BOTÓN DE DESCARGA DIRECTA -->
+        <a href="https://download1349.mediafire.com/iew6jv112ffgtEuD2_wGqAtvkElW7R6H6SsrVLYx6A6wevjZTyPK8AJHJdT5E4wpCRrniqlmcYaJ1s0xJftVh7heVgBnAUcPCu2h1yOLr-YSbuTtr1-elbxhm0I2qfjzBLqzZZmqTDtj5zbO4eKQX-NscRpF7unjdPYR9W2epUA5DLs/ah3zsso83lsglc3/VS%23+IDE+4.5.0.exe"
+           class="download-btn"
+           download>
+            ⬇ DESCARGAR PARA WINDOWS
+        </a>
+
+        <p style="margin-top: 40px; font-size: 1.2rem; color:#b8ff9c;">
+            Versión 4.5.0 • Compatible con Windows 10/11
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Características Principales</h2>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🌿 Sintaxis en Español</h3>
+                <p>Comandos como <strong>mostrar</strong>, <strong>cuando</strong>, <strong>repetir</strong> y más.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⬛ Void Engine 3D</h3>
+                <p>Motor 3D basado en Babylon.js integrado directamente en el IDE.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🌐 Exportación Web</h3>
+                <p>Convierte tus proyectos en páginas HTML ejecutables con un clic.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📦 Extensiones</h3>
+                <p>IA, HTTP, bases de datos, módulos personalizados y más.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⚡ Editor Avanzado</h3>
+                <p>Autocompletado, resaltado, consola integrada y modo jungla oscuro.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔧 Multiplataforma</h3>
+                <p>Proyectos exportables y compatibles con múltiples entornos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>VS# IDE v4.5</p>
+        <p>© 2026 — Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
